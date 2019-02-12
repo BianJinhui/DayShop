@@ -2,7 +2,7 @@
 from django.db import models
 from ckeditor_uploader.fields import RichTextUploadingField
 
-class GoodsType(models):
+class GoodsType(models.Model):
     type_tag = models.CharField(max_length = 32,verbose_name = "类型名称")
     type_parent_id = models.IntegerField(verbose_name = "父类型")
     type_description = models.TextField(verbose_name = "类型描述")
